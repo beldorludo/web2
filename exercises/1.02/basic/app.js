@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   console.log(statsMessage);
   next();
 });
-
+""
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/films', filmsRouter);
